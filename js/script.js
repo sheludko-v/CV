@@ -13,21 +13,24 @@ $(document).ready(function () {
       swal("Упс...", "Вы не прошли проверку на робота...", "error");
       return false;
     } else {
-       $.ajax({
-      type: "POST",
-      url: "/php/send.php",
-      data: $(this).serialize(),
-      success: function () {
-        swal("Класс!", "Ваше письмо отправлено!", "success").then( function() { location.reload(); });
-        $("#exampleModal").modal("hide");
-      },
-      error: function () {
-        swal("Упс...", "Письмо не отправлено :(", "error").then( function() { location.reload(); });
-        $("#exampleModal").modal("hide");
-      },
-    });
+      $.ajax({
+        type: "POST",
+        url: "/php/send.php",
+        data: $(this).serialize(),
+        success: function () {
+          swal("Класс!", "Ваше письмо отправлено!", "success");
+          $("form").trigger("reset");
+          grecaptcha.reset();
+        },
+        error: function () {
+          swal("Упс...", "Письмо не отправлено :(", "error").then( function() { location.reload(); });
+          $("form").trigger("reset");
+          grecaptcha.reset();
+        },
+      });
     }
     e.preventDefault();
+    $("#exampleModal").modal("hide");
   });
 });
 
