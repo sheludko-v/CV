@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <title>Виталий Шелудько » CV</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div id="top" class="row g-1 mt-1">
+        <!-- ---------------------------------------------------------------------- -->
+        <div class="col-lg-4 main">
+          <div class="p-3 border bg-light shadow-sm">
+            <div class="top border-bottom text-center">
+              <img
+                src="img/me.jpg"
+                class="img-thumbnail rounded-circle mb-3"
+                alt="В.Ш."
+              />
+              <h2>Виталий Шелудько</h2>
+              <h4 class="text-muted mb-3">Web Developer</h4>
+            </div>
+
+            <div class="contacts border-bottom p-4">
+              <h6 class="p-1">
+                <a href="tel:+7(906)4275052">
+                  <i class="bi bi-telephone-fill me-3 text-muted"></i>
+                  +7 (906)427-50-52
+                </a>
+              </h6>
+              <h6 class="p-1">
+                <a href="tel:+38(071)4600960"
+                  ><i class="bi bi-telephone-fill me-3 text-muted"></i>+38 (071)
+                  460-09-60</a
+                >
+              </h6>
+              <h6 class="p-1">
+                <a
+                  href="https://yandex.ru/maps/geo/donetsk/1444534550/?ll=37.761190%2C47.988848&z=11"
+                  target="blank"
+                >
+                  <i class="bi bi-geo-alt-fill me-3 text-muted"></i>Донецк,
+                  ДНР</a
+                >
+              </h6>
+              <h6 class="p-1">
+                <i class="bi bi-envelope-fill me-3 text-muted"></i>
+                <a
+                  href="mailto:stigmat.svo@gmail.com"
+                  class="skill"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Напишите мне</a
+                >
+              </h6>
+
+              <h6 class="p-1">
+                <a href="http://stigmat.online/" target="blank"
+                  ><i class="bi bi-link-45deg me-3 text-muted"></i
+                  >http://stigmat.online</a
+                >
+              </h6>
+            </div>
+
+            <div class="row mt-3 d-flex justify-content-center">
+              <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a href="https://t.me/stigmat_svo" target="blank"
+                  ><img class="soc-img" src="img/telegram.png" alt=""
+                /></a>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a href="https://vk.com/stigmat_svo" target="blank"
+                  ><img class="soc-img" src="img/vk.png" alt=""
+                /></a>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a href="https://github.com/stigmatik" target="blank"
+                  ><img class="soc-img" src="img/github.png" alt=""
+                /></a>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a
+                  href="https://www.linkedin.com/in/%D0%B2%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D0%B9-%D1%88%D0%B5%D0%BB%D1%83%D0%B4%D1%8C%D0%BA%D0%BE-467aba198/"
+                  target="blank"
+                  ><img class="soc-img" src="img/linkedin.png" alt=""
+                /></a>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=380714600960"
+                  target="blank"
+                  ><img class="soc-img" src="img/whatsapp.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 fixed-bottom my-up">
+            <div class="row mt-1">
+              <div>
+                <div class="p-1">
+                  <a class="up_link" href="#top">
+                    <div class="up mt-1 mb-3 text-center">
+                      <p class="bi bi-arrow-up-circle-fill"> Наверх</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------------------------------------------------ -->
+        <div class="col-lg-8 mb-3 info">
+          <div class="row">
+            <div>
+              <div class="p-4 border bg-light shadow-sm">
+                <h4 class="text-muted text-uppercase">
+                  <i class="bi bi-person-fill me-3"></i>О себе
+                </h4>
+                <div class="border-top border-bottom">
+                  <p class="mt-3 ms-3">
+                    Здравствуйте! Меня зовут Виталий. По образованию я
+                    инженер-программист. Но, после университета, жизнь с
+                    программированием не связал. В своей жизни я сменил много
+                    профессий. От оператора станков с ЧПУ до менеджера
+                    крюинговой компании, от маркетолога до монтажника LAN сетей.
+                  </p>
+
+                  <p class="ms-3">
+                    Сейчас работаю системным администратором. В мои обязанности
+                    входит поддержка работоспособности локальной сети и сервера,
+                    своевременный backup баз данных, мелкий блочный ремонт ПК,
+                    поддержка и обновление сайта организации, телефония и т.д.
+                  </p>
+                  <p class="ms-3">
+                    Еще на первом курсе, мне нравилось разбираться в верстке,
+                    анимировать с помощью технологии Macromedia Flash,
+                    автоматизировать анимацию с ActionScript. Последние два года
+                    активно копаюсь в современных технологиях, изучая их, как
+                    самостоятельно, так и с помощью курсов. <br />
+                    Но, чем дальше это остается сторонним занятием, тем больше я
+                    превращаюсь в «вечного студента».
+                  </p>
+                  <p class="ms-3">
+                    Поэтому, я являюсь соискателем на позицию «стажер» или
+                    «junior developer», чтобы систематизировать, повысить и
+                    закрепить свои знания, <br />
+                    научиться работать в команде, сделать разработку своей
+                    профессией и развиваться в ней.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="mt-1 p-4 border bg-light shadow-sm">
+                <h4 class="text-muted text-uppercase">
+                  <i class="bi bi-bank2 me-3"></i>Образование
+                </h4>
+                <div class="row">
+                  <div class="col-8 border-top border-bottom">
+                    <p class="mt-3 ms-3">
+                      <a href="https://pstu.edu/" target="blank">
+                        Приазовский Государственный Технический Университет
+                      </a>
+                    </p>
+                    <p class="mt-3 ms-3">Факультет информационных технологий</p>
+                    <p class="mt-3 ms-3">Кафедра информатики</p>
+                    <p class="mt-3 ms-3">
+                      Специалист по информатике и прикладной математике
+                    </p>
+                  </div>
+                  <div class="col-4 border-top border-bottom border-start">
+                    <p class="mt-3 ms-3">
+                      <i class="bi bi-clock ms-3 me-2"></i>1999 - 2004
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="mt-1 p-4 border bg-light shadow-sm">
+                <h4 class="text-muted text-uppercase">
+                  <i class="bi bi-stars me-3"></i>Навыки
+                </h4>
+                <div class="border-top border-bottom">
+                  <h5 class="text-muted mt-3 ms-3">Верстка:</h5>
+                  <p class="mt-3 ms-4 skill">
+                    HTML5 <br />
+                    CSS3 <br />
+                    Twitter Bootstrap
+                  </p>
+
+                  <h5 class="text-muted mt-3 ms-3">Языки программирования:</h5>
+                  <p class="mt-3 ms-4">
+                    <span class="skill">JavaScript</span> (базовый) <br />
+                    <span class="skill">PHP</span> (базовый практический) <br />
+                    <span class="skill">Ruby</span> (базовый) <br />
+                    <span class="skill">Visual Basic</span> (базовый
+                    практический)
+                  </p>
+
+                  <h5 class="text-muted mt-3 ms-3">БД:</h5>
+                  <p class="mt-3 ms-4">
+                    <span class="skill">MySQL</span>
+                  </p>
+
+                  <h5 class="text-muted mt-3 ms-3">Фреймворки:</h5>
+                  <p class="mt-3 ms-4">
+                    <span class="skill">Laravel</span> (основы) <br />
+                    <span class="skill">Rails</span> (основы)
+                  </p>
+
+                  <h5 class="text-muted mt-3 ms-3">Другие:</h5>
+                  <p class="mt-3 ms-4">
+                    <span class="skill">Git</span>,
+                    <span class="skill">Linux</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="mt-1 p-4 border bg-light shadow-sm">
+                <h4 class="text-muted text-uppercase">
+                  <i class="bi bi-newspaper me-3"></i>Курсы
+                </h4>
+                <div class="row">
+                  <div class="col-lg-12 border-top border-bottom">
+                    <div class="col-sm-4 pb-3 border-bottom">
+                      <a
+                        class="skill"
+                        href="https://www.donstep.com"
+                        target="blank"
+                        ><p class="mt-3 ms-3">Компьютерная академия "ШАГ"</p></a
+                      >
+                      <p class="mt-3 ms-3 pb-1">Программирование 1С</p>
+                      <i class="bi bi-clock ms-3"></i> 2017 г.
+                    </div>
+                    <div class="col-sm-4 pb-3 border-bottom">
+                      <a
+                        class="skill"
+                        href="https://goodprogrammer.ru"
+                        target="blank"
+                        ><p class="mt-3 ms-3">
+                          Онлайн школа "Хороший программист"
+                        </p></a
+                      >
+                      <p class="mt-3 ms-3 pb-1">Разработка на Ruby on Rails</p>
+                      <i class="bi bi-clock ms-3"></i> 2020 г.
+                    </div>
+                    <div class="col-sm-4 pb-3 border-bottom">
+                      <a
+                        class="skill"
+                        href="https://itgid.info/course/javascript-2"
+                        target="blank"
+                        ><p class="mt-3 ms-3">Курсы Александра Лущенко</p></a
+                      >
+                      <p class="mt-3 ms-3 pb-1">Базовый JavaScript</p>
+                      <i class="bi bi-clock ms-3"></i> 2021 г.
+                    </div>
+                    <div class="col-sm-4 pb-3">
+                      <a
+                        class="skill"
+                        href="https://itgid.info/course/php"
+                        target="blank"
+                        ><p class="mt-3 ms-3">Курсы Александра Лущенко</p></a
+                      >
+                      <p class="mt-3 ms-3">Практический PHP</p>
+                      <i class="bi bi-clock ms-3"></i> 2021 г.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="mt-1 p-4 border bg-light shadow-sm">
+              <h4 class="text-muted text-uppercase">
+                <i class="bi bi-clipboard-check me-3 mb-3"></i>Сертификаты
+              </h4>
+              <div class="row border-top border-bottom">
+                <div class="col-lg-6 text-center pt-3">
+                  <a
+                    href="https://itgid.info/img/certificate/01_rb2xfkezqq.png"
+                    target="blank"
+                  >
+                    <img src="img/sert_JS.png" width="250" alt="" />
+                  </a>
+                </div>
+                <div class="col-lg-6 text-center pt-3 pb-3">
+                  <a
+                    href="https://itgid.info/img/certificate/07_bh5pjfxw6f.png"
+                    target="blank"
+                  >
+                    <img src="img/sert_PHP.png" width="250" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="mt-1 p-4 border bg-light shadow-sm">
+              <h4 class="text-muted text-uppercase">
+                <i class="bi bi-person-workspace me-3"></i>Мои проекты
+              </h4>
+              <div class="container">
+                <div class="row border-top">
+                  <div class="col m-3">
+                    <div class="card text-center">
+                      <div class="card-header">
+                        <h5 class="card-title pt-2">Блог</h5>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Небольшой сайт-блог с регистрацией и авторизацией.
+                          Личный кабинет. Есть поиск по контенту и сортировка по
+                          категориям.
+                        </p>
+                        <a
+                          href="https://github.com/stigmatik/BlogLaravel"
+                          target="blank"
+                          class="skill"
+                          ><img class="soc-img" src="img/github.png" alt=""
+                        /></a>
+                        <p class="mt-3">
+                          <a
+                            href="http://lara-blog.stigmat.online"
+                            target="blank"
+                            class="skill"
+                            >lara-blog.stigmat.online</a
+                          >
+                        </p>
+                      </div>
+                      <div class="card-footer text-muted">Laravel</div>
+                    </div>
+                  </div>
+
+                  <div class="col m-3">
+                    <div class="card text-center">
+                      <div class="card-header">
+                        <h5 class="card-title pt-2">Блог</h5>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Небольшой сайт-блог с регистрацией и авторизацией.
+                          Личный кабинет. Есть поиск по контенту и сортировка по
+                          категориям.
+                        </p>
+                        <a
+                          href="https://github.com/stigmatik/Articles"
+                          target="blank"
+                          class="skill"
+                          ><img class="soc-img" src="img/github.png" alt=""
+                        /></a>
+                        <p class="mt-3">
+                          <a
+                            href="http://blog.stigmat.online"
+                            target="blank"
+                            class="skill"
+                            >blog.stigmat.online</a
+                          >
+                        </p>
+                      </div>
+                      <div class="card-footer text-muted">PHP</div>
+                    </div>
+                  </div>
+
+                  <div class="col m-3">
+                    <div class="card text-center">
+                      <div class="card-header">
+                        <h5 class="card-title pt-2">
+                          Система подачи заявок. Web версия
+                        </h5>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Система предназначена для подачи, регистрации и учета
+                          заявок на выполнение каких-либо работ.
+                        </p>
+                        <a
+                          href="https://github.com/stigmatik/DeskTopWeb"
+                          target="blank"
+                          class="skill"
+                          ><img class="soc-img" src="img/github.png" alt=""
+                        /></a>
+                        <p class="mt-3">
+                          <a
+                            href="http://aspoz.stigmat.online"
+                            target="blank"
+                            class="skill"
+                            >aspoz.stigmat.online</a
+                          >
+                        </p>
+                      </div>
+                      <div class="card-footer text-muted">PHP</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row border-bottom">
+                  <div class="col m-3">
+                    <div class="card text-center">
+                      <div class="card-header">
+                        <h5 class="card-title pt-2">
+                          Система учета пациентов. Desktop версия
+                        </h5>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Система предназначена для ведения учета поступающих
+                          пациентов, а также хранения данных о них.
+                        </p>
+                        <a
+                          href="https://github.com/stigmatik/ASUP"
+                          target="blank"
+                          class="skill"
+                          ><img class="soc-img" src="img/github.png" alt=""
+                        /></a>
+                      </div>
+                      <div class="card-footer text-muted">VB.NET</div>
+                    </div>
+                  </div>
+
+                  <div class="col m-3">
+                    <div class="card text-center">
+                      <div class="card-header">
+                        <h5 class="card-title pt-2">
+                          Система подачи заявок. Desktop версия
+                        </h5>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Система предназначена для подачи, регистрации и учета
+                          заявок на выполнение каких-либо работ.
+                        </p>
+                        <a
+                          href="https://github.com/stigmatik/DeskTop"
+                          target="blank"
+                          class="skill"
+                          ><img class="soc-img" src="img/github.png" alt=""
+                        /></a>
+                      </div>
+                      <div class="card-footer text-muted">VB.NET</div>
+                    </div>
+                  </div>
+
+                  <div class="col m-3">
+                    <div class="card text-center">
+                      <div class="card-header">
+                        <h5 class="card-title pt-2">Организация мероприятий</h5>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">
+                          Приложение для создания мероприятий. Автоматическая
+                          отметка на Яндекс.Карты. Полное оповещение по email.
+                          Возможность восстановления пароля от аккаунта.
+                        </p>
+                        <a
+                          href="https://github.com/stigmatik/bbq"
+                          target="blank"
+                          class="skill"
+                          ><img class="soc-img" src="img/github.png" alt=""
+                        /></a>
+                      </div>
+                      <div class="card-footer text-muted">Ruby on Rails</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Отправить письмо</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+          <div class="modal-body">
+
+            <form id="contact-form" action="/php/send.php" method="POST">
+              <div class="mb-3">
+                <label for="exampleInputName" class="form-label required"
+                  >Имя</label
+                >
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail" class="form-label required"
+                  >Email</label
+                >
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputTel" class="form-label required"
+                  >Телефон</label
+                >
+                <input
+                  name="tel"
+                  type="tel"
+                  class="form-control"
+                  id="tel"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputMsg" class="form-label required"
+                  >Сообщение</label
+                >
+                <textarea
+                  name="msg"
+                  class="form-control my-msg"
+                  id="msg"
+                  required
+                ></textarea>
+
+                <div
+                  class="g-recaptcha mt-3"
+                  data-sitekey="6Lex6gwdAAAAACAEF-ygopq6Tq7r4z-ISNcv1FHF"
+                ></div>
+
+                <button type="submit" class="btn my-button mt-3 float-end">
+                  Отправить
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

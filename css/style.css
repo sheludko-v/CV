@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+  background-color: #e1e8ed;
+}
+
+a {
+  text-decoration: none;
+  color: #007bb6;
+  font-size: 105%;
+  font-weight: 500;
+}
+
+a:hover {
+  color: darkslategray;
+  transition: 0.3s;
+}
+
+.main {
+  font-family: "Manrope", sans-serif;
+}
+
+.info {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.social li {
+  list-style: none;
+  display: inline;
+}
+
+.soc-img {
+  width: 40px;
+  transition: filter 0.3s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.soc-img:hover {
+  filter: grayscale(99%);
+}
+
+.info {
+  height: 300px;
+}
+
+.up {
+  width: 100%;
+  height: 32px;
+}
+
+.up_link {
+  color: rgb(128, 123, 123);
+}
+
+.up_link:hover {
+  color: #007ab9;
+  transition: 0.3s;
+}
+
+@media (max-width: 800px) {
+  .up {
+    display: none;
+  }
+}
+
+.skill {
+  color: #007bb6;
+}
+
+.my-up {
+  display: none;
+}
+
+.my-msg {
+  height: 100px;
+}
+
+.my-button {
+  background-color: #007bb6;
+  color: white;
+}
+
+.my-button:hover {
+  background-color: #0a6d9b;
+  color: white;
+}
+
+.required:after {
+  content: ' *';
+  color: red;
+}
+
