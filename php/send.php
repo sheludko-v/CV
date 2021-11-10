@@ -31,23 +31,29 @@ $message =
 '<!DOCTYPE html>
 <html lang="ru">
 <head></head>
-<body>
-<table style="margin: 0 auto;">
+<body style="background-color: #009933; width: 100%; height: 100%;">
+
+<div style="text-align: center;">
+    <h3 style="padding-top: 20px; color: yellow;">Вам письмо с сайта</h3>
+    <h2 style="color: yellow;">STIGMAT.ONLINE » CV</h2>
+</div>
+
+<table style="margin: 0 auto; padding-top: 10px; padding-bottom: 50px;">
     <tr>
-        <th style="background-color: dimgray; color: white; padding: 10px; text-align: center;">Имя</th>
-        <td style="width: 400px; padding: 10px; background-color: #CCCCCC; text-align: center;">'. $name .'</td>
+        <th style="background-color: #003300; color: white; padding: 10px; text-align: center;">Имя</th>
+        <td style="width: 400px; padding: 10px; background-color: #FFFFFF; text-align: center;">'. $name .'</td>
     </tr>
     <tr>
-        <th style="background-color: dimgray; color: white; padding: 10px; text-align: center;">Email</th>
-        <td style="width: 400px; padding: 10px; background-color: #CCCCCC; text-align: center;">'. $email .'</td>
+        <th style="background-color: #003300; color: white; padding: 10px; text-align: center;">Email</th>
+        <td style="width: 400px; padding: 10px; background-color: #FFFFFF; text-align: center;">'. $email .'</td>
     </tr>
     <tr>
-        <th style="background-color: dimgray; color: white; padding: 10px; text-align: center;">Телефон</th>
-        <td style="width: 400px; padding: 10px; background-color: #CCCCCC; text-align: center;">'. $tel .'</td>
+        <th style="background-color: #003300; color: white; padding: 10px; text-align: center;">Телефон</th>
+        <td style="width: 400px; padding: 10px; background-color: #FFFFFF; text-align: center;">'. $tel .'</td>
     </tr>
     <tr>
-        <th style="background-color: dimgray; color: white; padding: 10px; text-align: center;">Сообщение</th>
-        <td style="width: 400px; padding: 10px; background-color: #CCCCCC;">'. $msg .'</td>
+        <th style="background-color: #003300; color: white; padding: 10px; text-align: center;">Сообщение</th>
+        <td style="width: 400px; padding: 20px; background-color: #FFFFFF;">'. $msg .'</td>
     </tr>
 </table>
 </body>
