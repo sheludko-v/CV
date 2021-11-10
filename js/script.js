@@ -46,7 +46,7 @@ class jiggleit {
       if (pauseFactor) {
         c.t = c.t ? ++c.t : 1;
         if (c.t % pauseFactor == 0) {
-          c.to = pauseFactor * 300;
+          c.to = pauseFactor * 400;
           c.t = 0;
         } else
           c.to = 80;
