@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
   background-color: #e1e8ed;
@@ -79,7 +79,10 @@ a:hover {
 }
 
 .required:after {
-  content: ' *';
+  content: " *";
   color: red;
 }
 
+.jc2 {
+  position: relative;
+}
