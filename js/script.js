@@ -37,34 +37,40 @@ $(document).ready(function () {
 });
 
 let pauseFactor = 15;
-function jiggleit(num) {
-  this.el = jiggleit.el("jiggle" + num);
-  this.to = 80;
-  this.jig = function () {
-    let c = this;
-    if (pauseFactor) {
-      c.t = c.t ? ++c.t : 1;
-      if (c.t % pauseFactor == 0) {
-        c.to = pauseFactor * 250;
-        c.t = 0;
-      } else c.to = 80;
-    }
-    c.el.style.left = parseInt(c.el.style.left) == 1 ? "-2px" : "1px";
-    setTimeout(function () {
-      c.jig();
-    }, c.to);
-  };
-  this.jig();
+class jiggleit {
+  constructor(num) {
+    this.el = jiggleit.el("jiggle" + num);
+    this.to = 80;
+    this.jig = function () {
+      let c = this;
+      if (pauseFactor) {
+        c.t = c.t ? ++c.t : 1;
+        if (c.t % pauseFactor == 0) {
+          c.to = pauseFactor * 300;
+          c.t = 0;
+        } else
+          c.to = 80;
+      }
+
+      c.el.style.top = parseInt(c.el.style.top) == 1 ? "-1px" : "1px";
+      setTimeout(function () {
+        c.jig();
+      }, c.to);
+    };
+    this.jig();
+  }
+
+  static el(id) {
+    return document.all ? document.all[id] : document.getElementById(id);
+  }
+  static init() {
+    let i = 0;
+    while (jiggleit.el("jiggle" + i))
+      i++;
+    if (i--)
+      for (i; i > -1; --i)
+        new jiggleit(i);
+  }
 }
 
-jiggleit.el = function (id) {
-  return document.all ? document.all[id] : document.getElementById(id);
-};
-
-jiggleit.init = function () {
-  let i = 0;
-  while (jiggleit.el("jiggle" + i)) i++;
-  if (i--) for (i; i > -1; --i) new jiggleit(i);
-};
-
-if (document.all || document.getElementById) window.onload = jiggleit.init;
+if (document || document.getElementById) window.onload = jiggleit.init;
