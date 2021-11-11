@@ -1,3 +1,4 @@
+// Плавный подъём наверх
 $(function (f) {
   let element = f(".my-up");
   f(window).scroll(function () {
@@ -5,6 +6,7 @@ $(function (f) {
   });
 });
 
+// Проверка рекапчи и отправка формы через ajax
 $(document).ready(function () {
   $("#contact-form").on("submit", function (e) {
     let response = grecaptcha.getResponse();
@@ -36,6 +38,7 @@ $(document).ready(function () {
   });
 });
 
+// Дрожащая ссылка
 let pauseFactor = 15;
 class jiggleit {
   constructor(num) {
@@ -46,7 +49,7 @@ class jiggleit {
       if (pauseFactor) {
         c.t = c.t ? ++c.t : 1;
         if (c.t % pauseFactor == 0) {
-          c.to = pauseFactor * 400;
+          c.to = pauseFactor * 500;
           c.t = 0;
         } else
           c.to = 80;
@@ -74,3 +77,19 @@ class jiggleit {
 }
 
 if (document || document.getElementById) window.onload = jiggleit.init;
+
+
+// Переключатель светлая/тёмная тема
+let toggle = document.querySelector('.theme-toggle');
+toggle.addEventListener('click', function() {
+  document.body.classList.toggle('dark-theme'); 
+  document.querySelector('.main').classList.toggle('bg-dark'); 
+  let infos = document.querySelectorAll('.info');
+  infos.forEach(function(element) {
+    element.classList.toggle('bg-dark'); 
+  });
+  let cards = document.querySelectorAll('.card');
+  cards.forEach(function(element) {
+    element.classList.toggle('bg-dark'); 
+  });
+})
