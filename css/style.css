@@ -87,5 +87,9 @@ a:hover {
 .dark-theme {
   background-color:  #202022;
   color: whitesmoke;
-  transition: 0.5s;
+  transition: all 0.5s;
+}
+
+.bg-light {
+  transition: all 0.5s;
 }
