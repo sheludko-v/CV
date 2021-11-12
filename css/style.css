@@ -93,3 +93,7 @@ a:hover {
 .bg-light {
   transition: all 0.5s;
 }
+
+.git-dark-theme {
+  filter: brightness(0) invert(1);
+}

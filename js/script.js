@@ -84,6 +84,7 @@ let toggle = document.querySelector('.theme-toggle');
 toggle.addEventListener('click', function() {
   document.body.classList.toggle('dark-theme'); 
   document.querySelector('.main').classList.toggle('bg-dark'); 
+
   let infos = document.querySelectorAll('.info');
   infos.forEach(function(element) {
     element.classList.toggle('bg-dark'); 
@@ -91,6 +92,10 @@ toggle.addEventListener('click', function() {
   let cards = document.querySelectorAll('.card');
   cards.forEach(function(element) {
     element.classList.toggle('bg-dark'); 
+  });
+  let gits = document.querySelectorAll('.git-dark');
+  gits.forEach(function(element) {
+    element.classList.toggle('git-dark-theme'); 
   });
 })
 
