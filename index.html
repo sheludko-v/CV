@@ -76,7 +76,7 @@
               </h6>
 
               <h6 class="p-1">
-                <a href="http://stigmat.online/" target="blank"
+                <a class="mylink" href="http://stigmat.online/" target="blank"
                   ><i class="bi bi-link-45deg me-3 text-muted"></i
                   >http://stigmat.online</a
                 >
@@ -524,12 +524,6 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Отправить письмо</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Закрыть"
-            ></button>
           </div>
           <div class="modal-body">
             <form role="form" id="contact-form" method="POST">
@@ -584,11 +578,11 @@
                 ></textarea>
 
                 <div
-                  class="g-recaptcha mt-3"
+                  class="g-recaptcha mt-3" 
                   data-sitekey="6Lex6gwdAAAAACAEF-ygopq6Tq7r4z-ISNcv1FHF"
                 ></div>
-                <span id="captcha" style="margin-left: 100px; color: red" />
 
+                <button type="button" class="btn btn-secondary mt-3 ms-2 float-end" data-bs-dismiss="modal">Закрыть</button>
                 <button
                   id="submit"
                   type="submit"

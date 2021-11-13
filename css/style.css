@@ -97,3 +97,7 @@ a:hover {
 .git-dark-theme {
   filter: brightness(0) invert(1);
 }
+
+.dark-cap {
+  background-color: #202022;
+}

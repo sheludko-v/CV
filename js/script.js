@@ -81,9 +81,10 @@ if (document || document.getElementById) window.onload = jiggleit.init;
 
 // Переключатель светлая/тёмная тема
 let toggle = document.querySelector('.theme-toggle');
-toggle.addEventListener('click', function() {
+  toggle.addEventListener('click', function() {
   document.body.classList.toggle('dark-theme'); 
   document.querySelector('.main').classList.toggle('bg-dark'); 
+  document.querySelector('.modal-content').classList.toggle('bg-dark');
 
   let infos = document.querySelectorAll('.info');
   infos.forEach(function(element) {
