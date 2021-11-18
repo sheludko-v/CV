@@ -22,14 +22,16 @@ $(document).ready(function () {
         success: function () {
           swal("Класс!", "Ваше письмо отправлено!", "success");
           $("form").trigger("reset");
-          grecaptcha.reset();
+          // grecaptcha.reset();
+          $('.answer').text('');
         },
         error: function () {
           swal("Упс...", "Письмо не отправлено :(", "error").then(function () {
             location.reload();
           });
           $("form").trigger("reset");
-          grecaptcha.reset();
+          // grecaptcha.reset();
+          $('.answer').text('');
         },
       });
     // }
