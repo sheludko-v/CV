@@ -101,3 +101,7 @@ a:hover {
 .dark-cap {
   background-color: #202022;
 }
+
+.answer {
+  color: red;
+}

@@ -9,12 +9,12 @@ $(function (f) {
 // Проверка рекапчи и отправка формы через ajax
 $(document).ready(function () {
   $("#contact-form").on("submit", function (e) {
-    let response = grecaptcha.getResponse();
+    // let response = grecaptcha.getResponse();
 
-    if (response.length == 0) {
-      swal("Упс...", "Вы не прошли проверку на робота...", "error");
-      return false;
-    } else {
+    // if (response.length == 0) {
+    //   swal("Упс...", "Вы не прошли проверку на робота...", "error");
+    //   return false;
+    // } else {
       $.ajax({
         type: "POST",
         url: "/php/send.php",
@@ -32,11 +32,12 @@ $(document).ready(function () {
           grecaptcha.reset();
         },
       });
-    }
+    // }
     e.preventDefault();
     $("#exampleModal").modal("hide");
   });
 });
+
 
 // Дрожащая ссылка
 let pauseFactor = 15;
@@ -99,5 +100,30 @@ let toggle = document.querySelector('.theme-toggle');
     element.classList.toggle('git-dark-theme'); 
   });
 })
+
+
+// Проверка на робота
+let num1 = document.querySelector('.num1').innerHTML = Math.floor(Math.random() * 11);
+let num2 = document.querySelector('.num2').innerHTML = Math.floor(Math.random() * 21);
+let result = num1 + num2;
+let sum = document.querySelector('.sum');
+let sub = document.querySelector('#submit');
+sub.disabled = true;
+
+sum.addEventListener('input', function() {
+  if (sum.value == result) {
+    sub.disabled = false;
+    document.querySelector('.answer').textContent = 'Верно! Вы не робот!'
+  } else {
+    if (sum.value == '') {
+      document.querySelector('.answer').textContent = ''
+    } else {
+      document.querySelector('.answer').textContent = 'Не верно! Вы часом не робот?'
+    }
+  }
+  
+})
+    
+
 
 
