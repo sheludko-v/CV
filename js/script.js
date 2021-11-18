@@ -113,13 +113,14 @@ sub.disabled = true;
 sum.addEventListener('input', function() {
   if (sum.value == result) {
     sub.disabled = false;
-    document.querySelector('.answer').textContent = 'Верно! Вы не робот! :))'
+    document.querySelector('.answer').textContent = 'Верно! Вы не робот! :))';
   } else {
     if (sum.value == '') {
-      document.querySelector('.answer').textContent = ''
+      document.querySelector('.answer').textContent = '';
       sub.disabled = true;
     } else {
-      document.querySelector('.answer').textContent = 'Не верно! Вы наверное робот :(('
+      document.querySelector('.answer').textContent = 'Не верно! Вы наверное робот :((';
+      sub.disabled = true;
     }
   }
   
